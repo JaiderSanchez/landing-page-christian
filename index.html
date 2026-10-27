@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Encuentro con la Verdad</title>
+</head>
+<body>
+
+<div class="container">
+    <!-- Botón Toggle Modo Oscuro / Claro -->
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" type="button" aria-label="Cambiar tema">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <div class="header">
+        <h1>Bienvenido a Encuentro con la Verdad</h1>
+        <p>Una invitación especial para ti</p>
+    </div>
+
+    <!-- Bloque Versículo Rhema -->
+    <div class="rhema-card">
+        <p id="rhema-text">"Porque yo sé los pensamientos que tengo acerca de vosotros, dice el Señor, pensamientos de paz, y no de mal, para daros el fin que esperáis."</p>
+        <div class="rhema-ref" id="rhema-ref">Jeremías 29:11</div>
+    </div>
+
+    <!-- Formulario listo para Formspree -->
+    <form id="contacto-form">
+        <div class="form-group">
+            <label for="first_name">Nombres</label>
+            <input type="text" id="first_name" name="first_name" required placeholder="Tu nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="last_name">Primer Apellido</label>
+            <input type="text" id="last_name" name="last_name" required placeholder="Tu apellido">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Número de contacto / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Ej: +57 300 000 0000">
+        </div>
+
+        <button type="submit">Enviar mis datos</button>
+    </form>
+
+    <p class="footer-msg">Me estaré comunicando contigo. ¡Estaremos en contacto muy pronto!</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
