@@ -5,6 +5,13 @@ const themeIcon = document.getElementById('theme-icon');
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+// Función de aleatoriedad simple para los versículos random
+const randomIndex = Math.floor(Math.random() * rhemaVerses.length);
+const selectedVerse = rhemaVerses[randomIndex];
+
+document.getElementById('rhema-text').textContent = selectedVerse.text;
+document.getElementById('rhema-ref').textContent = selectedVerse.ref;
+
 if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
     document.body.classList.add('dark-mode');
     themeIcon.textContent = '☀️';
